@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link type="image/png" rel="icon" href="https://img.icons8.com/doodle/48/nintendo-switch-pro-controller.png">
+    <title>GameStore</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <span class="navbar-brand">GameStore</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Корзина</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Профиль
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Войти</a></li>
+                  <li><a class="dropdown-item" href="registration.html">Зарегистрироваться</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Search">
+              <button class="btn border-white" type="submit" >Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-white w-50">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="game.html"><img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="d-block w-100" alt="..."></a>  
+              </div>
+              <div class="carousel-item">
+                <a href="game.html"><img src="https://4kwallpapers.com/images/wallpapers/counter-strike-2-1920x1080-11129.png" class="d-block w-100" alt="..."></a>
+              </div>
+              <div class="carousel-item">
+                <a href="game.html"><img src="https://cdn2.unrealengine.com/egs-social-rocketleague-news-1920x1080-1920x1080-975383433.jpg" class="d-block w-100" alt="..."></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+      <div class="bg-dark pt-2 pb-2" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-2 list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Экшен</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Шутеры</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Приключения</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Ролевые</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Инди</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Симуляторы</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Стратегии</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Аркады</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Спорт и гонки</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Казуальные</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Хоррор</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Выживание</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Открытый мир</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">С сюжетом</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Метроидвания</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Головоломка</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Слэшер</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Рогалик</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Охота и рыбалка</a>
+
+            </div>
+            <div class="col-10">
+              <div class="row">
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+                <div class="card col-4 me-auto" style="width: 18rem;">
+                  <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rainbow six siege</h5>
+                    <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
+                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <span>19.99$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
