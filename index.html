@@ -33,6 +33,9 @@
                   <li><a class="dropdown-item" href="registration.html">Зарегистрироваться</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">Предложения</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Search">
@@ -169,5 +172,12 @@
             </div>
         </div>
       </div>
+      <div class="timer-container">
+        <label for="duration">Set Timer (in seconds):</label>
+        <input type="number" id="duration" min="1" value="60">
+        <button id="startBtn" class="btn btn-primary">Start Timer</button>
+        <div class="timer" id="timer"></div>
+      </div>
+      <script src="timer.js"></script>
 </body>
 </html>
