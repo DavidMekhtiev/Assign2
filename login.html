@@ -27,7 +27,7 @@
             <input type="submit" class="btn btn-primary" value="Войти">
             <a href="registration.html" class="btn btn-secondary">Регистрация</a>
         </form>
-        <div class="error-message text-white" id="error-message"></div>
+        <div class="error-message text-danger" id="error-message"></div>
     </div>
 
     <script>
@@ -45,11 +45,12 @@
             if (email === '' || password === '') {
                 errorMessage.textContent = 'Все поля должны быть заполнены.';
                 return;
-            }
-
-
-            if (password.length < 8) {
+            }else if (password.length < 8) {
                 errorMessage.textContent = 'Пароль должен быть минимум 8 символов.';
+                return;
+            }else{
+                var audio = new Audio('pop.m4a');
+                audio.play();
                 return;
             }
         });

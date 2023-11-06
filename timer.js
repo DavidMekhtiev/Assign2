@@ -4,20 +4,11 @@ const timerDisplay = document.getElementById('timer');
 
 let countdown;
 
-startButton.addEventListener('click', function () {
-    const duration = parseInt(durationInput.value);
-    if (isNaN(duration) || duration <= 0) {
-        alert('Ведите число больше 0.');
-        return;
-    }
-
-    startTimer(duration);
-});
+startTimer(3600);
 
 function startTimer(duration) {
     const startTime = Date.now();
     const endTime = startTime + duration * 1000;
-    alert("Таймер запущен");
 
     //запускаем сам таймер и говорим что делать каждую секунду
     countdown = setInterval(function () {
@@ -26,7 +17,7 @@ function startTimer(duration) {
         if (secondsLeft <= 0) {
             clearInterval(countdown);
             timerDisplay.textContent = 'Время прошло';
-            alert("Время прошло")
+            alert("Время прошло");
             return;
         }
 
@@ -38,6 +29,6 @@ function startTimer(duration) {
 function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainderSeconds = seconds % 60;
-    const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+    const display = `Скидка закончится: ${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
     timerDisplay.textContent = display;
 }

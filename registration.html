@@ -53,20 +53,22 @@
             const repPassword = document.getElementById('passwordRepeat').value;
             const name = document.getElementById('name').value;
 
-            errorMessage.textContent = ''; 
+            errorMessage.textContent = '';
+            errorMessage.style.color = 'red'; 
 
             if (email === '' || password === '' || name === '' || repPassword === '') {
                 errorMessage.textContent = 'Все поля должны быть заполнены.';
                 return;
-            }
-
-            if (password.length < 8) {
+            }else if (password.length < 8) {
                 errorMessage.textContent = 'Пароль должен быть минимум 8 символов.';
                 return;
-            }
-
-            if (password != repPassword) {
+            }else if (password !== repPassword) {
                 errorMessage.textContent = 'Пароли должны быть одинаковы.';
+                return;
+            }else{
+                var audio = new Audio('pop.m4a');
+                audio.play();
+                alert('Регистрация успешна!');
                 return;
             }
         });
