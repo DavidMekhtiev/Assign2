@@ -36,10 +36,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="todo.html">Предложения</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Квиз</a>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Search">
-              <button class="btn border-white" type="submit" >Поиск</button>
+            <form class="d-flex" role="search">+
+              <input class="form-control me-2 search-input" type="search" placeholder="Поиск..." aria-label="Search">
+              <button class="btn border-white search-btn" type="submit" >Поиск</button>
             </form>
           </div>
         </div>
@@ -91,6 +94,7 @@
                 <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Охота и рыбалка</a>
 
             </div>
+
             <div class="col-md-10">
               <div class="row">
                 <div class="card col-md-4 me-auto" style="width: 18rem;">
@@ -100,10 +104,18 @@
                     <p class="card-text">Tom Clancy's Rainbow Six® Осада – элитный реалистичный тактический командный шутер, где побеждает сторона...</p>
                     <div class="timer text-danger" id="timer"></div>
                     <p></p>
-                    <a href="game.html" class="btn btn-success">Купить</a>
+                    <button id="openModalBtn" class="btn btn-success">Купить</button>
                     <s>19.99$</s><span class="text-danger"> 10.99$</span>
                   </div>
                 </div>
+                
+            <div id="myModal" class="position-absolute top-80 start-50 z-2 w-auto translate-middle border-white bg-white text-black">
+              <div class="modal-content">
+                  <span class="close" id="closeModalBtn">&times;</span>
+                  <p>Вы уверены что хотите перейти на страницу?</p>
+                  <a href="game.html" class="btn btn-success">Да</a>
+              </div>
+            </div>
                 <div class="card col-md-4 me-auto" style="width: 18rem;">
                   <img src="https://images.hdqwalls.com/download/tom-clanycs-rainbow-six-siege-4k-ix-1920x1080.jpg" class="card-img-top mt-1" alt="...">
                   <div class="card-body">
@@ -174,6 +186,8 @@
             </div>
         </div>
       </div>
+
+      <button id="scrollToTopBtn" onclick="scrollToTop()" class="btn btn-secondary d-flex">Scroll to Top</button>
       <script src="timer.js"></script>
 </body>
 </html>
